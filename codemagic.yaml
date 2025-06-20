@@ -1,0 +1,31 @@
+workflows:
+  ios-simulator-build:
+    name: iOS Simulator Build
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+      vars:
+        GOOGLE_CLIENT_ID_IOS: 157881781771-hjg3elnkvn4qp9t58muv66pn7f2i60i3.apps.googleusercontent.com
+        GOOGLE_SERVER_CLIENT_ID: 157881781771-0mdk1l0fi9ns4mssu920rjudiir1uoqq.apps.googleusercontent.com
+
+    scripts:
+      - name: 📄 Создаём .env файл
+        script: |
+          echo "GOOGLE_CLIENT_ID_IOS=$GOOGLE_CLIENT_ID_IOS" >> .env
+          echo "GOOGLE_SERVER_CLIENT_ID=$GOOGLE_SERVER_CLIENT_ID" >> .env
+
+      - name: 📦 Устанавливаем зависимости
+        script: flutter pub get
+
+      - name: ☕ Устанавливаем pods
+        script: |
+          cd ios
+          pod install
+          cd ..
+
+      - name: 🛠 Сборка для iOS симулятора
+        script: flutter build ios --simulator
+
+    artifacts:
+      - build/ios/iphonesimulator/Runner.app
