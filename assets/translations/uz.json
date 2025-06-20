@@ -1,0 +1,55 @@
+{
+    "login": {
+        "or": "Yoki",
+        "google": "Google orqali kirish",
+        "enter": "Kirish",
+        "registration": "Ro‘yxatdan o‘tish",
+        "email": "Email manzilingizni kiriting",
+        "password": "Parol",
+        "passwordHint": "Parolingizni kiriting",
+        "enterButton": "Kirish",
+        "remember": "Qurilmani eslab qolish",
+        "loading": "Yuklanmoqda..."
+    },
+    "registration": {
+        "beforeRegister": "Ro‘yxatdan o‘tishdan oldin sizga qoidalar bilan tanishib chiqishni tavsiya qilamiz",
+        "agreement": "foydalanuvchi shartnomasi shartlari bilan",
+        "agreeYes": "Ha, men roziman",
+        "termsOfUse": "Nigoh.uz saytining foydalanish shartlariga",
+        "siteName": "Nigoh.uz sayti"
+    },
+    "main": {
+        "search": "Shaharlar, restoranlar, teatrlar va boshqalarni qidiring",
+        "forClient": "Mijozlar uchun",
+        "forOrganizer": "Tadbir tashkilotchilar uchun",
+        "howItWorks": "Qanday ishlaydi?",
+        "organizer_steps": {
+            "step1": {
+                "title": "1. Tadbir yarating",
+                "description": "Ro‘yxatdan o‘ting, tashkilotchi bo‘ling va tadbirlarni qo‘shishni boshlang."
+            },
+            "step2": {
+                "title": "2. Tadbirni eʼlon qiling",
+                "description": "Tadbir haqida to‘liq maʼlumot kiriting va uni eʼlon qiling."
+            },
+            "step3": {
+                "title": "3. Sotishni boshlang",
+                "description": "Tadbirga chiptalarni soting va daromad oling."
+            }
+        },
+        "user_steps": {
+            "step1": {
+                "title": "1. Tadbir tanlang",
+                "description": "Ro‘yxatdan o‘ting va sizga yoqqan tadbirni tanlang."
+            },
+            "step2": {
+                "title": "2. Chiptalarni oling",
+                "description": "Tadbir sahifasida chiptalarni oling."
+            },
+            "step3": {
+                "title": "3. Tadbirga boring",
+                "description": "Tadbirga boring va maroqli dam oling."
+            }
+        }
+    }
+}
