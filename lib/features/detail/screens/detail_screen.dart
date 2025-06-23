@@ -95,8 +95,8 @@ class DetailScreen extends StatelessWidget {
                   event: event,
                 );
               }),
-              SizedBox(height: 20),
-              Footer(),
+              SizedBox(height: 80),
+              // Footer(),
             ],
           ),
         ),

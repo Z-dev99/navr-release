@@ -173,48 +173,7 @@ class _MainScreenState extends State<MainScreen> {
                         );
                       },
                     ),
-                    MainScreenInfo(
-                      items: <MainScreenInfoItemData>[
-                        MainScreenInfoItemData(
-                          title: 'main.organizer_steps.step1.title'.tr(),
-                          description: 'main.organizer_steps.step1.description'
-                              .tr(),
-                          image: 'assets/icons/calendar-add.svg',
-                        ),
-                        MainScreenInfoItemData(
-                          title: 'main.organizer_steps.step2.title'.tr(),
-                          description: 'main.organizer_steps.step2.description'
-                              .tr(),
-                          image: 'assets/icons/calendar-tick.svg',
-                        ),
-                        MainScreenInfoItemData(
-                          title: 'main.organizer_steps.step3.title'.tr(),
-                          description: 'main.organizer_steps.step3.description'
-                              .tr(),
-                          image: 'assets/icons/wallet.svg',
-                        ),
-                      ],
-                    ),
-                    MainScreenInfo(
-                      items: <MainScreenInfoItemData>[
-                        MainScreenInfoItemData(
-                          title: 'main.user_steps.step1.title'.tr(),
-                          description: 'main.user_steps.step1.description'.tr(),
-                          image: 'assets/icons/calendar-add.svg',
-                        ),
-                        MainScreenInfoItemData(
-                          title: 'main.user_steps.step2.title'.tr(),
-                          description: 'main.user_steps.step2.description'.tr(),
-                          image: 'assets/icons/ticket.svg',
-                        ),
-                        MainScreenInfoItemData(
-                          title: 'main.user_steps.step3.title'.tr(),
-                          description: 'main.user_steps.step3.description'.tr(),
-                          image: 'assets/icons/wallet.svg',
-                        ),
-                      ],
-                    ),
-                    const Footer(),
+                    SizedBox(height: 80),
                   ],
                 ),
               ),

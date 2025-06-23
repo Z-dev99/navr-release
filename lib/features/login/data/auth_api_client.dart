@@ -55,8 +55,8 @@ abstract class User with _$User {
   const factory User({
     required String id,
     String? phone_number,
-    required String email,
-    required String role,
+    required String? email,
+    required String? role,
     String? name,
     String? surname,
     String? patronymic,
@@ -64,7 +64,7 @@ abstract class User with _$User {
     required bool is_active,
     required bool is_staff,
     required bool is_verified,
-    required String region,
+    required String? region,
   }) = _User;
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);

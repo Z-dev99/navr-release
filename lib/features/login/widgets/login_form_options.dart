@@ -131,6 +131,7 @@ class SignInWithGoogleProvider extends ChangeNotifier {
       }
 
       final auth = await account.authentication;
+      print(auth.idToken);
       if (auth.idToken == null) {
         await Future.delayed(Duration(milliseconds: 300));
         _setLoading(false);
@@ -141,6 +142,7 @@ class SignInWithGoogleProvider extends ChangeNotifier {
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({'token': auth.idToken}),
       );
+      print(response.body);
       if (response.statusCode == 200) {
         final jsonData = jsonDecode(response.body);
         final SharedPreferences _prefs = await SharedPreferences.getInstance();
@@ -151,6 +153,7 @@ class SignInWithGoogleProvider extends ChangeNotifier {
       }
     } catch (e) {
       e;
+      print(e);
     } finally {
       _setLoading(false);
     }

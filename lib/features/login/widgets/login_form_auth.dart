@@ -55,7 +55,9 @@ class LoginFormAuthContent extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 8.0),
             child: Text(
-              model.generalError!,
+              context.locale.languageCode == 'ru'
+                  ? 'Неправильный логин или пароль'
+                  : 'Noto\'g\'ri login yoki parol',
               style: TextStyle(color: Colors.red),
             ),
           ),

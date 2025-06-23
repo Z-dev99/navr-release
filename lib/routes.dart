@@ -22,6 +22,7 @@ final class AppRouter extends RootStackRouter {
       duration: Duration(milliseconds: 300),
       transitionsBuilder: TransitionsBuilders.fadeIn,
     ),
+
     CustomRoute(
       page: DashboardRoute.page,
       guards: [AuthGuard()],
@@ -37,6 +38,11 @@ final class AppRouter extends RootStackRouter {
         CustomRoute(
           page: TheatersRoute.page,
           duration: Duration(milliseconds: 200),
+          transitionsBuilder: TransitionsBuilders.fadeIn,
+        ),
+        CustomRoute(
+          page: InfoRoute.page,
+          duration: Duration(milliseconds: 300),
           transitionsBuilder: TransitionsBuilders.fadeIn,
         ),
         CustomRoute(

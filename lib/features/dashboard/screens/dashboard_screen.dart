@@ -24,6 +24,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       routes: <PageRouteInfo<Object?>>[
         TheatersRoute(),
         MainRoute(),
+        InfoRoute(),
         ProfileRoute(),
       ],
       builder: (context, child) {
@@ -75,7 +76,8 @@ class DashboardScreenBottomBar extends StatelessWidget {
             navItem('theathers', 0, context),
             navItem('lang', -1, context),
             SizedBox(width: 80),
-            navItem('profile', 2, context),
+            navItem('info', 2, context),
+            navItem('profile', 3, context),
           ],
         ),
       ),

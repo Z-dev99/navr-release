@@ -262,13 +262,13 @@ class _ProfileScreenPersonalInfoState extends State<ProfileScreenPersonalInfo> {
               ),
             ),
           ),
+          SizedBox(height: 60),
         ],
       ),
     );
   }
 }
 
-//
 class ProfileScreenPersonalInfoItem extends StatelessWidget {
   final String labelText;
   final String value;

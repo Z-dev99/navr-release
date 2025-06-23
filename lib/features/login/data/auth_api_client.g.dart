@@ -41,8 +41,8 @@ Map<String, dynamic> _$TokensToJson(_Tokens instance) => <String, dynamic>{
 _User _$UserFromJson(Map<String, dynamic> json) => _User(
   id: json['id'] as String,
   phone_number: json['phone_number'] as String?,
-  email: json['email'] as String,
-  role: json['role'] as String,
+  email: json['email'] as String?,
+  role: json['role'] as String?,
   name: json['name'] as String?,
   surname: json['surname'] as String?,
   patronymic: json['patronymic'] as String?,
@@ -50,7 +50,7 @@ _User _$UserFromJson(Map<String, dynamic> json) => _User(
   is_active: json['is_active'] as bool,
   is_staff: json['is_staff'] as bool,
   is_verified: json['is_verified'] as bool,
-  region: json['region'] as String,
+  region: json['region'] as String?,
 );
 
 Map<String, dynamic> _$UserToJson(_User instance) => <String, dynamic>{

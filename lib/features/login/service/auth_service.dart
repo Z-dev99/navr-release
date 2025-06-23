@@ -56,6 +56,7 @@ class AuthService extends ChangeNotifier
       _authResponse = response;
       final SharedPreferences _prefs = await SharedPreferences.getInstance();
       _prefs.setString('access_token', _authResponse?.tokens.access ?? '');
+      print(response.user.email);
       _prefs.setString('user', json.encode(response.user));
       notifyListeners();
     } on DioException catch (e) {
@@ -66,7 +67,7 @@ class AuthService extends ChangeNotifier
         serverMessage ?? 'Ошибка входа. Код: $statusCode. Попробуйте позже.',
       );
     } catch (e) {
-      throw Exception('Непредвиденная ошибка. Попробуйте позже.');
+      throw Exception('Непредвиденная ошибка. ${e} Попробуйте позже.');
     }
   }
 

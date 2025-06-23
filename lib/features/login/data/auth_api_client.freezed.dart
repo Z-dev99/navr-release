@@ -463,7 +463,7 @@ as String,
 /// @nodoc
 mixin _$User {
 
- String get id; String? get phone_number; String get email; String get role; String? get name; String? get surname; String? get patronymic; String? get pinfl; bool get is_active; bool get is_staff; bool get is_verified; String get region;
+ String get id; String? get phone_number; String? get email; String? get role; String? get name; String? get surname; String? get patronymic; String? get pinfl; bool get is_active; bool get is_staff; bool get is_verified; String? get region;
 /// Create a copy of User
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -496,7 +496,7 @@ abstract mixin class $UserCopyWith<$Res>  {
   factory $UserCopyWith(User value, $Res Function(User) _then) = _$UserCopyWithImpl;
 @useResult
 $Res call({
- String id, String? phone_number, String email, String role, String? name, String? surname, String? patronymic, String? pinfl, bool is_active, bool is_staff, bool is_verified, String region
+ String id, String? phone_number, String? email, String? role, String? name, String? surname, String? patronymic, String? pinfl, bool is_active, bool is_staff, bool is_verified, String? region
 });
 
 
@@ -513,21 +513,21 @@ class _$UserCopyWithImpl<$Res>
 
 /// Create a copy of User
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? phone_number = freezed,Object? email = null,Object? role = null,Object? name = freezed,Object? surname = freezed,Object? patronymic = freezed,Object? pinfl = freezed,Object? is_active = null,Object? is_staff = null,Object? is_verified = null,Object? region = null,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? phone_number = freezed,Object? email = freezed,Object? role = freezed,Object? name = freezed,Object? surname = freezed,Object? patronymic = freezed,Object? pinfl = freezed,Object? is_active = null,Object? is_staff = null,Object? is_verified = null,Object? region = freezed,}) {
   return _then(_self.copyWith(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,phone_number: freezed == phone_number ? _self.phone_number : phone_number // ignore: cast_nullable_to_non_nullable
-as String?,email: null == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
-as String,role: null == role ? _self.role : role // ignore: cast_nullable_to_non_nullable
-as String,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,email: freezed == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
+as String?,role: freezed == role ? _self.role : role // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
 as String?,surname: freezed == surname ? _self.surname : surname // ignore: cast_nullable_to_non_nullable
 as String?,patronymic: freezed == patronymic ? _self.patronymic : patronymic // ignore: cast_nullable_to_non_nullable
 as String?,pinfl: freezed == pinfl ? _self.pinfl : pinfl // ignore: cast_nullable_to_non_nullable
 as String?,is_active: null == is_active ? _self.is_active : is_active // ignore: cast_nullable_to_non_nullable
 as bool,is_staff: null == is_staff ? _self.is_staff : is_staff // ignore: cast_nullable_to_non_nullable
 as bool,is_verified: null == is_verified ? _self.is_verified : is_verified // ignore: cast_nullable_to_non_nullable
-as bool,region: null == region ? _self.region : region // ignore: cast_nullable_to_non_nullable
-as String,
+as bool,region: freezed == region ? _self.region : region // ignore: cast_nullable_to_non_nullable
+as String?,
   ));
 }
 
@@ -543,8 +543,8 @@ class _User implements User {
 
 @override final  String id;
 @override final  String? phone_number;
-@override final  String email;
-@override final  String role;
+@override final  String? email;
+@override final  String? role;
 @override final  String? name;
 @override final  String? surname;
 @override final  String? patronymic;
@@ -552,7 +552,7 @@ class _User implements User {
 @override final  bool is_active;
 @override final  bool is_staff;
 @override final  bool is_verified;
-@override final  String region;
+@override final  String? region;
 
 /// Create a copy of User
 /// with the given fields replaced by the non-null parameter values.
@@ -587,7 +587,7 @@ abstract mixin class _$UserCopyWith<$Res> implements $UserCopyWith<$Res> {
   factory _$UserCopyWith(_User value, $Res Function(_User) _then) = __$UserCopyWithImpl;
 @override @useResult
 $Res call({
- String id, String? phone_number, String email, String role, String? name, String? surname, String? patronymic, String? pinfl, bool is_active, bool is_staff, bool is_verified, String region
+ String id, String? phone_number, String? email, String? role, String? name, String? surname, String? patronymic, String? pinfl, bool is_active, bool is_staff, bool is_verified, String? region
 });
 
 
@@ -604,21 +604,21 @@ class __$UserCopyWithImpl<$Res>
 
 /// Create a copy of User
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? phone_number = freezed,Object? email = null,Object? role = null,Object? name = freezed,Object? surname = freezed,Object? patronymic = freezed,Object? pinfl = freezed,Object? is_active = null,Object? is_staff = null,Object? is_verified = null,Object? region = null,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? phone_number = freezed,Object? email = freezed,Object? role = freezed,Object? name = freezed,Object? surname = freezed,Object? patronymic = freezed,Object? pinfl = freezed,Object? is_active = null,Object? is_staff = null,Object? is_verified = null,Object? region = freezed,}) {
   return _then(_User(
 id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as String,phone_number: freezed == phone_number ? _self.phone_number : phone_number // ignore: cast_nullable_to_non_nullable
-as String?,email: null == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
-as String,role: null == role ? _self.role : role // ignore: cast_nullable_to_non_nullable
-as String,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String?,email: freezed == email ? _self.email : email // ignore: cast_nullable_to_non_nullable
+as String?,role: freezed == role ? _self.role : role // ignore: cast_nullable_to_non_nullable
+as String?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
 as String?,surname: freezed == surname ? _self.surname : surname // ignore: cast_nullable_to_non_nullable
 as String?,patronymic: freezed == patronymic ? _self.patronymic : patronymic // ignore: cast_nullable_to_non_nullable
 as String?,pinfl: freezed == pinfl ? _self.pinfl : pinfl // ignore: cast_nullable_to_non_nullable
 as String?,is_active: null == is_active ? _self.is_active : is_active // ignore: cast_nullable_to_non_nullable
 as bool,is_staff: null == is_staff ? _self.is_staff : is_staff // ignore: cast_nullable_to_non_nullable
 as bool,is_verified: null == is_verified ? _self.is_verified : is_verified // ignore: cast_nullable_to_non_nullable
-as bool,region: null == region ? _self.region : region // ignore: cast_nullable_to_non_nullable
-as String,
+as bool,region: freezed == region ? _self.region : region // ignore: cast_nullable_to_non_nullable
+as String?,
   ));
 }
 
